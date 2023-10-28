@@ -43,15 +43,9 @@ $(function() {
     Function to switch campuses
  */
 function switchCampus() {
-    if (window.location.hash === '#Chennai') {
-        $('#campus').text('Chennai Campus');
-        $('#last-update').text(lastUpdate.chennai);
-        window.campus = 'Chennai';
-    } else {
-        $('#campus').text('Vellore Campus');
-        $('#last-update').text(lastUpdate.vellore);
-        window.campus = 'Vellore';
-    }
+    $('#campus').text('Chennai Campus');
+    $('#last-update').text(lastUpdate.chennai);
+    window.campus = 'Chennai';
 
     getCourses();
 }

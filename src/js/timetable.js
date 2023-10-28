@@ -608,7 +608,7 @@ function checkSlotClash() {
         var $highlightedCell = $(this);
         var $highlightedCellDivs = $(this).children('div[data-course]');
 
-        var noPostLabFlag =
+        /*var noPostLabFlag =
             $(this).hasClass('no-post-lab') &&
             $(this).children('div[data-is-lab="false"]').length > 0 &&
             $(this)
@@ -619,7 +619,10 @@ function checkSlotClash() {
             $(this).children('div[data-is-lab="true"]').length > 0 &&
             $(this)
                 .prev()
-                .children('div[data-is-lab="false"]').length > 0;
+                .children('div[data-is-lab="false"]').length > 0;*/
+
+        var noPostLabFlag = false;
+        var noPreTheoryFlag = false;
 
         if (
             $highlightedCellDivs.length > 1 ||
